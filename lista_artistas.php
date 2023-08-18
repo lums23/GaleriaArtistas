@@ -83,7 +83,7 @@ session_start();
                         if ($resultado->num_rows > 0) {
                             while ($row = $resultado->fetch_assoc()) {
                                 echo '<div class="box">';
-                                echo '<img src="' . $row["foto"] . '" alt="Foto do Artista">';
+                                echo '<img src="Fotos/' . $row["foto"] . '" alt="Foto do Artista">';
                                 echo '<h4 class="title">' . $row["nome"] . '</h4>';
                                 echo '<p class="subtitle">Idade: ' . $row["idade"] . '</p>';
                                 echo '<p class="subtitle">Profissão: ' . $row["profissao"] . '</p>';
@@ -102,4 +102,4 @@ session_start();
         </div>
     </section>
 </body>
-</html>
+</html>    
